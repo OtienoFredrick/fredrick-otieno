@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredrick Otieno - Portfolio | Business Analyst & Data Specialist</title>
+    <meta name="description" content="Fredrick Otieno - Junior Business Analyst and Actuarial Science Graduate specializing in SQL, Power BI, and data analytics.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio-style.css') }}">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="{{ url_for('static', filename='assets/Fred.jpg') }}" alt="Fredrick Otieno" class="profile-img">
+                </div>
+                <div class="profile-info">
+                    <h1>Fredrick Otieno</h1>
+                    <p class="subtitle">Junior Business Analyst | Actuarial Science Graduate</p>
+                    <p class="tagline">Transforming data into actionable business insights</p>
+                </div>
+            </div>
+            <nav class="navigation">
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+                <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+                <a href="#projects"><i class="fas fa-briefcase"></i> Projects</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="about" class="section">
+            <div class="container">
+                <h2><i class="fas fa-user"></i> About Me</h2>
+                <div class="about-content">
+                    <p>I'm a passionate Junior Business Analyst with a robust background in Actuarial Science and a strong foundation in data analytics. I specialize in transforming complex data into actionable business insights using modern tools and methodologies.</p>
+                    <p>My expertise lies in identifying business opportunities through data analysis, creating compelling visualizations, and developing solutions that drive organizational growth and efficiency.</p>
+                    <div class="highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Data-Driven</h3>
+                            <p>Expert in statistical analysis and business intelligence</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Problem Solver</h3>
+                            <p>Creative approach to complex business challenges</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Collaborative</h3>
+                            <p>Strong communication and teamwork skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Science in Actuarial Science</h3>
+                    <p class="institution">University Name</p>
+                    <p class="year">Graduation Year: 2022</p>
+                    <ul class="coursework">
+                        <li>Statistical Analysis & Probability Theory</li>
+                        <li>Risk Management & Financial Mathematics</li>
+                        <li>Database Management & SQL</li>
+                        <li>Business Analytics & Modeling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Data & Analytics</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Tableau</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-bar"></i> Business Intelligence</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                            <span class="skill-tag">KPI Development</span>
+                            <span class="skill-tag">Reporting</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cogs"></i> Tools & Technologies</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Microsoft Office Suite</span>
+                            <span class="skill-tag">R Programming</span>
+                            <span class="skill-tag">SPSS</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-handshake"></i> Soft Skills</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Problem-Solving</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Critical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+    <div class="container">
+        <h2><i class="fas fa-briefcase"></i> Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <!-- Financial Analysis -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Financial Analysis with MLE</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/OtienoFredrick/Data_science/tree/main/FinancialAnalysis_MLE" class="btn-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">Applied Maximum Likelihood Estimation to evaluate financial models and assess risk-return tradeoffs for investment portfolios.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Excel</span>
+                    <span class="tech-tag">MLE</span>
+                    <span class="tech-tag">Stocks</span>
+                </div>
+            </div>
+
+            <!-- Stock Analysis -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Stock Market Analysis</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/OtienoFredrick/Data_science/tree/main/stock_analysis" class="btn-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">Analyzed stock price data and built models to identify market trends, volatility, and long-term investment opportunities.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Excel</span>
+                    <span class="tech-tag">Time Series</span>
+                    <span class="tech-tag">VBA</span>
+                </div>
+            </div>
+
+            <!-- Naive Bayes -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Sentiment Analysis with Naive Bayes</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/OtienoFredrick/Data_science/tree/main/Naive_Bayes_Algorithm" class="btn-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">Built a machine learning classifier to perform sentiment analysis on text data using the Naive Bayes algorithm.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">NLP</span>
+                </div>
+            </div>
+
+            <!-- House Price Prediction -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Beachside House Prices</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/OtienoFredrick/Data_science/tree/main/Beachside_houses" class="btn-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">Developed predictive models to estimate house prices based on location, features, and market conditions.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Excel</span>
+                    <span class="tech-tag">Regression</span>
+                    <span class="tech-tag">Data Visualization</span>
+                </div>
+            </div>
+
+            <!-- Mental Health Analysis -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Mental Health Data Analysis</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/OtienoFredrick/Data_science/tree/main/mentalhealth_analysis" class="btn-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">Explored mental health survey data, identifying trends and correlations in daily activity and well-being.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">R</span>
+                    <span class="tech-tag">Tidyverse</span>
+                    <span class="tech-tag">ggplot2</span>
+                </div>
+            </div>
+
+            <!-- Visualization -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Animated Windrose Visualization</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/OtienoFredrick/Data_science/blob/main/Animated_Windrose/windrose_annimation.gif" class="btn-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">Created animated windrose plots for visualizing wind speed and direction patterns over time.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">Animation</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:fredrickotieno768@gmail.com">fredrickotieno768gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a href="https:/linkedin.com/in/fredrick-otieno-425a5817a" target="_blank">linkedin.com/in/fredrickotieno</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/OtienoFredrick" target="_blank">github.com/fredrickotieno</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div>
+                                <h3>Resume</h3>
+                                <a href="{{ url_for('static', filename='assets/Fredrick Otieno M Resume.pdf') }}" class="btn-download" target="_blank">
+                                    <i class="fas fa-download"></i> Download CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send me a message</h3>
+                        <form action="/contact" method="POST">
+                            {{ form.hidden_tag() }}
+                            <div class="form-group">
+                                {{ form.name(class="form-control", placeholder="Your Name") }}
+                            </div>
+                            <div class="form-group">
+                                {{ form.email(class="form-control", placeholder="Your Email") }}
+                            </div>
+                            <div class="form-group">
+                                {{ form.subject(class="form-control", placeholder="Subject") }}
+                            </div>
+                            <div class="form-group">
+                                {{ form.message(class="form-control", placeholder="Your Message", rows="5") }}
+                            </div>
+    <button type="submit" class="btn-submit">
+        <i class="fas fa-paper-plane"></i> Send Message
+    </button>
+</form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Fredrick Otieno. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/fredrick-otieno-425a5817a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/OtienoFredrick" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:fredrickotieno768@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active class to navigation based on scroll position
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.navigation a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
